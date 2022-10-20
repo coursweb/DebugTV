@@ -1,8 +1,7 @@
 body {
     font-family: 'Epilogue', sans-serif;
     color: #fff;
-    background: rgb(90, 90, 90);
-    background: linear-gradient(38deg, rgb(75 75 75) 0%, rgb(85 85 85) 45%, rgb(173 171 171) 100%);
+    background: linear-gradient(213deg, rgb(75 75 75) 0%, rgb(232 232 215) 45%, rgb(255 255 238) 100%);
 }
 
 a {
@@ -42,6 +41,7 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
         column-gap: 2rem;
+        background: linear-gradient(38deg, rgb(75 75 75) 0%, rgb(232 232 215) 45%, rgb(255 255 238) 100%);
     }
 
     #playlist {
