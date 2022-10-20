@@ -1,13 +1,5 @@
-#playlist,
-#shownotes {}
-
-#shownotes {
-    overflow: scroll;
-}
-
 body {
-
-    font-family: sans-serif;
+    font-family: 'Epilogue', sans-serif;
     color: #fff;
     background: rgb(90, 90, 90);
     background: linear-gradient(38deg, rgb(75 75 75) 0%, rgb(85 85 85) 45%, rgb(173 171 171) 100%);
@@ -38,7 +30,11 @@ body {
     height: auto;
 }
 
-/* switch layout on horizontal screen*/
+#shownotes {
+    overflow: scroll;
+}
+
+/* flip layout on horizontal screen */
 
 @media (min-aspect-ratio: 10/8) {
     body {
