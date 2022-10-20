@@ -1,35 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debug TV</title>
-    <style>
-        #playlist,
-        #shownotes {
-            width: 100%;
-            height: 40vh;
-        }
-
-        #shownotes {
-            overflow: scroll;
-        }
-
-        body {
-            padding: 1rem;
-            font-family: sans-serif;
-            color: rgb(224, 224, 224);
-            background: rgb(90, 90, 90);
-        }
-
-        a {
-            color: rgb(224, 224, 224);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <iframe id="playlist" width="100%" height="315"
         src="https://www.youtube-nocookie.com/embed/videoseries?list=PLlfJkWGxh-q2AueB9twTsnATiCH0W3kEB"
@@ -37,18 +14,10 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
 
-    <h2>Informations sur les épisodes / <a href="javascript:jumpto('id.bz23q8kn56b7');">À
-            propos</a></h2>
+    <h1>Debug TV – Informations sur les épisodes</h1>
 
     <iframe id="shownotes" name="shownotes"
         src="https://docs.google.com/document/d/e/2PACX-1vQn2TZ2-gxxQtqcBuiMb-4okEXcHSN4Gz7RkSGhB2o4EWVt2V6GdrZgHFk-1bDsmJygNHFdpiEmZxhc/pub?embedded=true"></iframe>
 
-    <script>
-        function jumpto(target) {
-            var childWindow = document.getElementById("shownotes").contentWindow;
-            childWindow.scrollTo(0, childWindow.document.getElementById(target).offsetTop);
-        }
-    </script>
 </body>
-
 </html>

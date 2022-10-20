@@ -1,0 +1,63 @@
+#playlist,
+#shownotes {}
+
+#shownotes {
+    overflow: scroll;
+}
+
+body {
+
+    font-family: sans-serif;
+    color: rgb(224, 224, 224);
+    background: rgb(90, 90, 90);
+    background: linear-gradient(38deg, rgb(75 75 75) 0%, rgb(85 85 85) 45%, rgb(173 171 171) 100%);
+}
+
+a {
+    color: rgb(224, 224, 224);
+}
+
+h1 {
+    margin: 0.6em 0;
+    font-size: 1.2rem;
+}
+
+/* LAYOUT */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 3rem);
+    padding: 1rem;
+}
+
+#playlist,
+#shownotes {
+    flex-grow: 1;
+    flex-basis: auto;
+    height: auto;
+}
+
+/* switch layout on horizontal screen*/
+
+@media (min-aspect-ratio: 10/8) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 2rem;
+    }
+
+    #playlist {
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+    }
+
+    #playlist,
+    #shownotes {
+        width: 100%;
+        height: 100%;
+    }
+
+}
