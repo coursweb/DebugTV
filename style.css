@@ -10,7 +10,7 @@ a {
 }
 
 h1 {
-    margin: 1rem 10px;
+    margin: 1.6rem 0 1rem 10px;
     font-size: 1.2rem;
 }
 
@@ -37,7 +37,7 @@ body {
 /* flip layout on horizontal screen */
 
 @media (min-aspect-ratio: 10/8) {
-    body {
+body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr;
@@ -45,14 +45,17 @@ body {
         background: #ffffee;
     }
 
-    #playlist {
+h1 {
+    margin-top: 0;
+}
+#playlist {
         grid-row-start: 1;
         grid-row-end: 3;
 
     }
 
-    #playlist,
-    #shownotes {
+#playlist,
+#shownotes {
         width: 100%;
         height: 100%;
     }
